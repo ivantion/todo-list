@@ -1,0 +1,283 @@
+/* ToDoApp.css */
+
+body, html {
+  height: 100%;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.todo-app {
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  border-radius: 8px;
+}
+
+header h1 {
+  color: #ff6347;
+  font-size: 3rem;
+  font-family: 'Comic Sans MS', cursive, sans-serif; /* Fun font */
+}
+
+.add-todo input {
+  padding: 0.5rem;
+  font-size: 1.2rem;
+  border: 2px solid #ff6347;
+  border-radius: 5px;
+}
+
+.add-todo button {
+  padding: 0.5rem 1rem;
+  font-size: 1.2rem;
+  background-color: #ff6347;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.add-todo button:hover {
+  background-color: #ff4500; /* Darker orange on hover */
+}
+
+.filters button {
+  margin: 1rem 0.5rem;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  background-color: #ff6347;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.filters button:hover {
+  background-color: #ff4500; /* Darker orange on hover */
+}
+
+.todo-list ul, .completed-todo-list ul {
+  list-style: none;
+  padding: 0;
+}
+
+.todo-list li {
+  margin: 0.5rem 0;
+  padding: 0.5rem;
+  background-color: #add8e6; /* Light blue background for to-do items */
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  transition: transform 0.2s;
+}
+
+.todo-list li:hover {
+  transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+.completed-todo-list li {
+  margin: 0.5rem 0;
+  padding: 0.5rem;
+  background-color: #90ee90; /* Light green background for completed items */
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  transition: transform 0.2s;
+}
+
+.completed-todo-list li:hover {
+  transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+.todo-list button, .completed-todo-list button {
+  margin-left: 0.5rem;
+  padding: 0.3rem 0.6rem;
+  font-size: 0.9rem;
+  background-color: #ff6347;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.todo-list button:hover, .completed-todo-list button:hover {
+  background-color: #ff4500; /* Darker orange on hover */
+}
+
+.todo-list button i, .completed-todo-list button i {
+  font-size: 1.2rem;
+}
+
+.todo-list input[type="text"] {
+  font-size: 1.2rem;
+  padding: 0.3rem;
+  border: 1px solid #ff6347;
+  border-radius: 5px;
+}
+
+.score {
+  margin-top: 2rem;
+  background-color: #ffebcd; /* Light beige background */
+  padding: 0.5rem; /* Reduced padding */
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.score h2 {
+  color: #ff6347;
+  font-size: 1.5rem; /* Reduced font size */
+  font-family: 'Comic Sans MS', cursive, sans-serif; /* Fun font */
+}
+
+.score p {
+  font-size: 1rem; /* Reduced font size */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.score i {
+  color: gold;
+  margin-left: 0.5rem;
+}
+
+.todo-list ul li,
+.completed-todo-list ul li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+}
+
+.todo-list ul li button,
+.completed-todo-list ul li button {
+  margin-left: 5px;
+}
+
+.todo-list ul li .task-buttons,
+.completed-todo-list ul li .task-buttons {
+  display: flex;
+  align-items: center;
+}
+
+.input-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.input-container input {
+  font-size: 1.5em;
+  padding: 10px;
+  margin-right: 10px;
+  border-radius: 5px;
+  border: 2px solid #ccc;
+}
+
+.input-container button {
+  font-size: 1.5em;
+  padding: 10px 20px;
+  border-radius: 5px;
+  background-color: #ffcc00;
+  border: none;
+  cursor: pointer;
+}
+
+.input-container button:hover {
+  background-color: #ff9900;
+}
+
+.todo-app {
+  padding: 20px;
+  max-width: 800px;
+  margin: 0 auto;
+  font-family: Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.new-todo {
+  display: flex;
+  gap: 10px;
+  padding-bottom: 20px; /* Add padding to separate from filter buttons */
+}
+
+.new-todo-input {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.add-todo-button {
+  padding: 10px 20px;
+  border: none;
+  background-color: #007bff;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.filter-buttons {
+  display: flex;
+  gap: 10px;
+  padding-bottom: 20px; /* Add padding to separate from the todo list */
+}
+
+.filter-button {
+  padding: 10px 20px;
+  border: 1px solid #ccc;
+  background-color: #f9f9f9;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.score {
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 5px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.placeholder-text {
+  text-align: center;
+  color: #888;
+  font-size: 1.2rem;
+  margin-top: 20px;
+}
+
+.score p {
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+@media (max-width: 600px) {
+  .todo-app {
+    padding: 10px;
+  }
+
+  .new-todo {
+    flex-direction: column;
+  }
+
+  .filter-buttons {
+    flex-direction: column;
+  }
+
+  .score {
+    padding: 15px;
+  }
+}
